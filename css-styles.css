@@ -1,0 +1,377 @@
+body {
+    font: .8em verdana, arial normal;
+    padding: 0em;
+    margin: 0em;
+    width: 100%;
+    --yellowColor: #edcd1f;
+    --deepblueColor: rgba(30, 45, 59, 1);
+    --lightgrayColor: rgba(255, 255, 255, 0.5);
+    min-width:1060px;
+
+}
+
+/*header*/
+.main-header {
+    width: 35%;
+}
+
+.main-header h1 {
+    display: inline-block;
+    font-size: 3em;
+    font-weight: normal;
+    padding: 1em;
+    margin: 0;
+    color: var(--deepblueColor);
+    background-color: var(--yellowColor);
+}
+
+.eel-logo {
+    color: #7d0000;
+    font-weight: bold;
+}
+
+.header-container {
+    background-color: var(--deepblueColor);
+    display: flex;
+    align-items: flex-end;
+}
+
+nav {
+    width: 70%;
+}
+
+nav li {
+    display: inline-flex;
+    margin: 1em;
+    /*justify-items:*/
+    justify-content: flex-end;
+}
+
+a {
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--lightgrayColor);
+}
+
+li a {
+
+    font-size: 1.5em;
+    padding: 1em;
+}
+
+li a:hover {
+    color: var(--deepblueColor);
+    background-color: var(--yellowColor);
+    transition: background-color 1.2s ease;
+}
+
+.parallax {
+    perspective: .1em;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-image: url("images/ruuning.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 32em;
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.parallax__layer--base {
+    transform: translateZ(0);
+}
+
+.parallax__layer--back {
+    transform: translateZ(-1px);
+}
+
+.parallax__group {
+    position: relative;
+    height: 20em;
+    transform-style: preserve-3d;
+    /*.parallax__layer--base h1{*/
+    /*color: var(--lightgrayColor);*/
+    /*font-size: 5em;*/
+    /*text-shadow: .1em .1em .3em;*/
+    /*text-align: center;*/
+    /*position: relative;*/
+    /*top: 3em;*/
+}
+
+/*.main-image p{*/
+/*color: darkgrey;*/
+/*font-size: 3em;*/
+/*position: relative;*/
+/*top:4em;*/
+/*left:25%;*/
+/*}*/
+/*div pic*/
+.main-image {
+    height: 32em;
+    background-image: url("images/ruuning.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*content*/
+main > h1 {
+    color: var(--yellowColor);
+    font-size: 3em;
+    padding: 1em auto;
+    text-align: center;
+    font-weight: 500;
+    border-right: solid var(--yellowColor) .5em;
+    border-left: solid var(--yellowColor) .5em;
+    background: linear-gradient(0.5turn, rgba(30, 45, 59, 1), rgba(30, 45, 59, .9));
+    margin: 0;
+    margin-top: .5em;
+}
+
+img {
+    height: 20em;
+    width: 28em;
+
+}
+
+/*article {*/
+/*width: 27%;*/
+/*margin: 1em;*/
+/*}*/
+
+article > a {
+    color: black;
+    text-decoration: none;
+}
+
+article h1:hover {
+    color: var(--yellowColor);
+}
+
+.gadgets-container {
+    display: flex;
+    justify-content: space-around;
+    vertical-align: baseline;
+}
+
+.gadgets {
+    width: 40%;
+}
+
+/*.gadgets article {*/
+/*width: 100%;*/
+/*}*/
+
+/*footer*/
+.footer-container {
+    background-color: var(--deepblueColor);
+    color: var(--lightgrayColor);
+    height: 10em;
+    text-align: center;
+}
+
+footer small {
+    text-align: center;
+    position: relative;
+    top: 1em;
+}
+
+footer button {
+    height: 1.5em;
+    width: 1.5em;
+    color: var(--lightgrayColor);
+    background-color: transparent;
+    border: transparent;
+    border-radius: .75em;
+}
+
+footer button:hover {
+    background-color: var(--yellowColor);
+    color: var(--deepblueColor);
+    transition: .3s ease-in;
+}
+
+footer a:hover {
+    color: var(--yellowColor);
+}
+
+/*feedback page*/
+.feedback {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.feedback-form {
+    background: linear-gradient(to top, var(--yellowColor), yellow);
+    color: var(--deepblueColor);
+    border-radius: .5em;
+    height: 5em;
+    margin: 1em;
+}
+
+.feedback-form > h2 {
+    text-align: center;
+    padding: .3em;
+}
+.btn, btn-primary{
+    color: var(--lightgrayColor);
+    background-color: var(--deepblueColor);
+    margin: 0;
+
+}
+.btn:hover, btn-primary:hover{
+    color:var(--deepblueColor);
+    background-color:var(--yellowColor);
+}
+.feedback-image img{
+    width: 100%;
+    height: 35em;
+    border: .2em solid var(--yellowColor);
+    border-radius: 1em;
+}
+.feedback-image p{
+    font-size: large;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    bottom:5em;
+
+}
+textarea {
+    resize: none;
+}
+/*article*/
+.article-link{
+    color: auto;
+}
+.article-link:hover h1{
+    color:var(--yellowColor);
+    transition: .3s ease-in;
+}
+.article-link img{
+    filter: brightness(.5);
+}
+.article-link:hover img{
+    filter: brightness(1);
+    transition: .3s ease-in;
+}
+.title-article header {
+    text-align: center;
+}
+
+.title-article section {
+    width: 60%;
+    margin-left: 20%;
+}
+.article-footer address, .article-footer time{
+    display: inline-block;
+    position: relative;
+    left:80%;
+    margin-bottom: .5em;
+}
+
+/*Slideshow container in article*/
+.myS img {
+    width: 100%;
+    height: auto;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+#nextSlide, #prevSlide {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: 1.5em;
+    padding: 1em;
+    color: var(--lightgrayColor);
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: 0.8s ease;
+    border-radius: 0 .1em .1em 0;
+}
+
+#nextSlide {
+    right: 0;
+    border-radius: .1em 0 0 .1em;
+}
+
+#prevSlide:hover, #nextSlide:hover {
+    background-color: var(--yellowColor);
+    /*opacity: .5;*/
+    color: var(--deepblueColor);
+}
+
+.text {
+    color: var(--lightgrayColor);
+    font-size: .8em;
+    padding: .5em;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: .8em;
+    width: .8em;
+    margin: 0 .1em;
+    background-color: var(--deepblueColor);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.8s ease;
+}
+
+.dot:hover {
+    background-color: var(--yellowColor);
+    opacity: .95;
+}
+
+.active {
+    background-color: var(--lightgrayColor);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/*saucony page*/
+.gadgets-slider {
+    width: 70%;
+    margin: 1em 15%;
+}
+
+.mySlides {
+    width: 90%;
+    height: 35em;
+}
+
+figure {
+    width: 60%;
+    height: auto;
+    margin: 0 20%;
+}
+
+figcaption {
+    font-style: italic;
+}
+
